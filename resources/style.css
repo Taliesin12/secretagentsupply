@@ -3,56 +3,73 @@ body{display: flex;
   font-size: 18px;
   font-family: Helvetica;
   color: white;}
+.box{width:960px;}
 
 header{display: flex;
+  flex-direction: column-reverse;
   height: 2.32rem;
   background-color: black;
   align-items: center;
   width: 100%;
   justify-content: center;
-  }
+  font-size: 1rem; }
 
-  .box{width:960px;
-    border: 3px solid green;
-  }
+.head{ display: flex;
+  flex-direction: row;
+  align-items: center;}
+
+
+.title{height: 1rem;
+  padding: .66rem 0rem;}
+
+
+a{color: white;
+  text-decoration: none;}
 
 header img{height:1.5rem;
   padding-left: .5rem;
   padding-right: 1rem;}
 
+
+
 /*subheader*/
 
 .subheader{display: flex;
   background-image: url("images/moto.jpeg");
+  background-size: cover;
   height: 25rem;
-  border: solid 2px blue;
   width: 100%;
   justify-content: center;}
 
 
-.subheader .floater{display: flex;
-  flex-direction: column;
-  background-color: black;
-  width: 20rem;
-  margin-top: 9rem;
-  padding: 2rem 3rem 2rem 3rem;}
+  .subheader .floater{display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 20rem;
+    margin-top: 9rem;
+    padding: 2rem 3rem 2rem 3rem;}
 
-.subheader .floater p{font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: .25rem;
+  .subheader .floater p{font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: .25rem;}
 
-}
-
-.subheader .floater span{font-size: 2rem;
-  margin-top: .25rem;
-  font-weight: bold;}
+  .subheader .floater span{font-size: 2rem;
+    margin-top: .25rem;
+    font-weight: bold;}
 
 /*menu*/
 
 .navbar {background-color: firebrick;
   display: flex;
   justify-content: center;
+  padding: .75rem 0rem;
+  color: white;
+  align-content: space-between;
   }
+
+.navbar nav{display: flex;
+  justify-content: space-between;
+  color: white;}
 
 /*products*/
 
@@ -61,20 +78,40 @@ header img{height:1.5rem;
 
 .productbar{display:flex;
   flex-direction: row;
-  justify-content: space-between;}
+  justify-content: space-between;
+  margin-top: 3rem;}
 
-.product{background-color: white;
-  width: 30%;
-  border: 4px solid black;
-  }
+  .product{
+    background-color: white;
+    width: 30%;
+    border: 4px solid black;}
 
-.productimg{height: 9rem;
-  border: 2px solid red;
-  }
+  .productimg{display: flex;
+  justify-content: center;  }
 
-.productimg img{height: 100%;
+  .productimg img{height: 100%;
   margin-top:2rem;
-  margin-bottom: 2rem;}
+  margin-bottom: 2rem;
+  height: 9rem;
+  max-width: 100%;
+  max-height: 100%;}
+
+  .productname {background-color: black;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  text-align: center;}
+
+.meetingbar{display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 4rem;}
+
+  .meeting{width:35%;}
+
+  .meetblack{background-color: black;
+    padding: 1rem 2rem;}
+
+  .meetwhite{color:black;}
 
 footer{display: flex;
   justify-content:center;
