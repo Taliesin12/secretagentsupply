@@ -130,10 +130,7 @@ footer .box{display: flex;
   align-items: center;}
 
 @media only screen and (max-width: 1024px)
-
-  {.navbar{background-color: blue;}
-
-  .box{width: 100%;}
+  {.box{width: 100%;}
 
   .box .menubar{justify-content: center;
     display: list-item;
@@ -148,10 +145,7 @@ footer .box{display: flex;
   .meeting{width: 35%;}}
 
 @media only screen and (max-width: 470px)
-
-  {.navbar{background-color: green;}
-
-  .subheader{height: 15rem;}
+  {.subheader{height: 15rem;}
 
   .subheader .floater{margin-top: 10rem;
   padding-top: 1rem;
