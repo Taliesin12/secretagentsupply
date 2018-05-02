@@ -71,6 +71,7 @@ header img{height:1.5rem;
   justify-content: space-between;
   color: white;}
 
+.menubar{display: none;}
 /*products*/
 
 .info {display: flex;
@@ -81,8 +82,15 @@ header img{height:1.5rem;
   justify-content: space-between;
   margin-top: 3rem;}
 
-  .product{
-    background-color: white;
+  .product{background-color: white;
+    width: 30%;
+    border: 4px solid black;}
+
+  .product-remove{background-color: white;
+    width: 30%;
+    border: 4px solid black;}
+
+  .product-remove2{background-color: white;
     width: 30%;
     border: 4px solid black;}
 
@@ -120,3 +128,50 @@ footer{display: flex;
 
 footer .box{display: flex;
   align-items: center;}
+
+@media only screen and (max-width: 1024px)
+
+  {.navbar{background-color: blue;}
+
+  .box{width: 100%;}
+
+  .box .menubar{justify-content: center;
+    display: list-item;
+    text-align: center;}
+
+  .navbar nav{display: none;}
+
+  .product{width: 47%;}
+  .product-remove2{width:47%;}
+  .product-remove{display:none;}
+
+  .meeting{width: 35%;}}
+
+@media only screen and (max-width: 470px)
+
+  {.navbar{background-color: green;}
+
+  .subheader{height: 15rem;}
+
+  .product{width:90%;}
+
+  .info{display: flex;
+    align-items: center;}
+
+  .meetingbar{display: flex;
+    flex-direction: column;
+
+    width: 90%;
+    border: 4px solid blue;
+    }
+
+  .meeting{margin-top: .5rem;
+    width: 100%;}
+
+  .product-remove2{display: none;}
+
+  .productbar{justify-content: center;}
+
+  footer .box{display: flex;
+    justify-content: center;}
+}
